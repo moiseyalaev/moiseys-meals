@@ -7,6 +7,7 @@ ruby "3.1.4"
 gem 'devise'
 gem 'devise-jwt'
 gem 'jsonapi-serializer'
+gem 'rack-cors'
 
 #  For json response
 # gem 'fast_jsonapi'
