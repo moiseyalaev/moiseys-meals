@@ -20,6 +20,9 @@ gem 'pg'
 # active Record
 gem 'activerecord'
 
+# dot enviorment
+gem 'dotenv'
+
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.5", ">= 7.0.5.1"
  
@@ -91,3 +94,9 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
+gem "langchainrb", "~> 0.6.4"
+gem "weaviate-ruby", "~> 0.8.3"
+gem "ruby-openai"
+gem "google_search_results"
+gem "eqn"

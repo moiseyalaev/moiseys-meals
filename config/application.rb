@@ -1,6 +1,7 @@
 require_relative 'boot'
 
 require 'rails/all'
+require 'dotenv/load'
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
@@ -11,12 +12,16 @@ module DeviseVue
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 7.0
 
+    # # Allow requests from localhost and localhost:3001
+    # config.hosts << "localhost"
+    # config.hosts << "localhost:3001"
+
     # This also configures session_options for use below
     config.session_store :cookie_store, key: '_interslice_session'
 
     # Required for all session management (regardless of session_store)
     config.middleware.use ActionDispatch::Cookies
-
+    config.middleware.use ActionDispatch::Flash
     config.middleware.use config.session_store, config.session_options
     config.action_controller.default_protect_from_forgery = true
 
