@@ -1,0 +1,31 @@
+import Signup from "./Signup";
+import Login from './Login';
+import Logout from './Logout';
+// import PrivateText from './PrivateText';
+import UserHome from './UserHome.js';
+import { useState } from "react";
+
+const User = ({currUser, setCurrUser}) => {
+    const [show, setShow] = useState(true)
+
+    if(currUser) 
+        return (
+            <div>
+            <h2>Welcome back {currUser.email}!</h2>
+            <UserHome/>
+            {/* <PrivateText currUser={currUser}/> */}
+            <Logout setCurrUser={setCurrUser}/>
+            </div>
+        )
+    return (
+        <div>
+            { show?
+                <Login setCurrUser={setCurrUser} setShow={setShow}/>  
+                :
+                <Signup setCurrUser={setCurrUser}  setShow={setShow} />
+            }
+        </div>
+    )
+}
+
+export default User

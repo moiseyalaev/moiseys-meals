@@ -1,8 +1,8 @@
-/* SignUpPage.css */
+/* SignUpPage.css
 
 body {
   background-image: url("images/bg.jpg");
-  /* background-size: cover; */
+  /* background-size: cover;
   background-size: 105% auto;
   background-position: center;
   background-repeat: no-repeat;
@@ -69,4 +69,4 @@ body {
 
 .submit-button:hover {
   background-color: #45a049;
-}
+} */
