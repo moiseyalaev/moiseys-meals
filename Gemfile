@@ -100,3 +100,5 @@ gem "weaviate-ruby", "~> 0.8.3"
 gem "ruby-openai"
 gem "google_search_results"
 gem "eqn"
+
+gem "faraday", "~> 1.10"

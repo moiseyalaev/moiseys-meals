@@ -7,8 +7,6 @@ class PrivateController < ApplicationController
     }
 
     # Redirect to the user homepage
-    # byebug
-
     # render file: Rails.root.join('react_frontend/src/components/UserHome.js'), layout: false
     
   end
