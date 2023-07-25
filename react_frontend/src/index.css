@@ -1,0 +1,72 @@
+/* SignUpPage.css
+
+body {
+  background-image: url("images/bg.jpg");
+  /* background-size: cover;
+  background-size: 105% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.title {
+  font-family: "Your desired font", Brush Script MT, cursive;
+  font-weight: 10;
+  font-size: 150px;
+  color: white;
+  margin-bottom: 40px;
+  margin-top: 0vh;
+}
+
+.form {
+  width: 400px;
+  padding: 30px;
+  background-color: rgba(211, 211, 211, 0.9);
+  border-radius: 8px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.form-title {
+  text-align: center;
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #0834f59c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.submit-button:hover {
+  background-color: #45a049;
+} */
