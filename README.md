@@ -29,8 +29,8 @@ App not hosted online due to the cost of tokens to use openAPI
   
 * Deployment instructions
   1. Copy this repo on your local machine
-  2. Set up devise with your own auth token
-  3. Set up a paid OpenAPI account (I suggest you set a limit on usage per month, to keep costs low) and save the auth token in secret file
+  2. Set up devise with your own secret token
+  3. Set up a paid OpenAPI account (I suggest you set a limit on usage per month, to keep costs low) and save the auth token in .env file
   4. Navigate to this project and run `rails start`
   5. Navigate into react_frontend and run `npm start`
   6. Sign up for an account, then log in (if not already), and enjoy some of moisey's meals!
