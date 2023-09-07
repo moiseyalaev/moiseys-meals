@@ -9,11 +9,11 @@ https://github.com/moiseyalaev/moiseys-meals/assets/22864591/9c06d841-bba4-491a-
 
 App not hosted online due to the cost of tokens to use openAPI
 
-Future feature:
-A grocery list and calendar UI that will fill as meals are set for the week
+* Future feature
+  A grocery list and calendar UI that will automatically fill as the ai helps the user decided on a meal
 
 * Ruby, Rails, and React version
- 3.1, 7.0, 
+  3.1, 7.0, 18. 2
 
 * System dependencies
   All the dependencies are listed in gemfile. The only external service required is OpenAPI to power the ai bot
