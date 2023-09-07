@@ -37,11 +37,11 @@ const UserHome = () => {
     return <div> Loading...</div>;
   }
 
-  const handleUserInput = (event) => {
+    const handleUserInput = (event) => {
     setUserInput(event.target.value);
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
     const message = userInput.trim();
 
@@ -54,14 +54,31 @@ const UserHome = () => {
 
     // Clear the input field
     setUserInput('');
-  };
 
+    // Make the API call to your backend here using fetch
+    try {
+      const response = await fetch('http://localhost:3000/api/chat', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ message }),
+      });
+
+      const data = await response.json();
+
+      // Add the bot's response to the chat history
+      setChatHistory((prevChatHistory) => [...prevChatHistory, { sender: 'bot', message: data.response }]);
+    } catch (error) {
+      console.log('Error:', error);
+    }
+  };
   return (
     <div className="user-home-container">
       <div className="chat-container">
         <div className="chat-history">
           {chatHistory.map((chat, index) => (
-            <div key={index} className={chat.sendersender === 'user' ? 'user-message' : 'bot-message'}>
+            <div key={index} className={chat.sender === 'user' ? 'user-message' : 'bot-message'}>
               <span>{chat.sender === 'user' ? 'You: ' : 'Bot: '}</span>
               {chat.message}
             </div>

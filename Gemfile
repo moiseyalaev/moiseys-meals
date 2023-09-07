@@ -8,7 +8,6 @@ gem 'devise'
 gem 'devise-jwt'
 gem 'jsonapi-serializer'
 gem 'rack-cors'
-gem 'rack-cors'
 
 #  For json response
 # gem 'fast_jsonapi'
@@ -108,3 +107,4 @@ gem "eqn"
 # gem "faraday", "~> 1.10"
 # gem "foreman", github: "ddollar/foreman"
 gem 'rest-client'
+gem 'json'
