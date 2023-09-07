@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   get 'private/test'
   # get '/user_home', to: 'user_home#index', as: 'user_home'
   get '/user_home', to: 'user_home#index'
+  post '/api/chat', to: 'api#chat'
 
   devise_for :users, 
     path: '', 

@@ -23,6 +23,9 @@ gem 'activerecord'
 # dot enviorment
 gem 'dotenv'
 
+# dot enviorment
+gem 'dotenv'
+
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.5", ">= 7.0.5.1"
  
@@ -101,4 +104,7 @@ gem "ruby-openai"
 gem "google_search_results"
 gem "eqn"
 
-gem "faraday", "~> 1.10"
+# gem "faraday", "~> 1.10"
+# gem "foreman", github: "ddollar/foreman"
+gem 'rest-client'
+gem 'json'
