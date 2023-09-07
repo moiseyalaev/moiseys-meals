@@ -1,5 +1,6 @@
 # README
 Example of the application login and signup using JWT Auth:
+
 https://github.com/moiseyalaev/moiseys-meals/assets/22864591/6f41188f-c591-4d01-9192-53ca4bc1dc7e
 
 Example of the application's chatbot answering meal prep questions by calling openAPI
@@ -11,12 +12,11 @@ App not hosted online due to the cost of tokens to use openAPI
 Future feature:
 A grocery list and calendar UI that will fill as meals are set for the week
 
-* Ruby version
+* Ruby, Rails, and React version
+ 3.1, 7.0, 
 
 * System dependencies
-All   the dependencies are listed in gemfile. The only external service required is OpenAPI to power the ai bot
-
-* Configuration
+  All the dependencies are listed in gemfile. The only external service required is OpenAPI to power the ai bot
 
 * Database
   PostgreSQL was set up when the first iteration of the application had prepopulated meals, directions, and ingredients from which the bot queried.
